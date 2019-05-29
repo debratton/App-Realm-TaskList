@@ -8,6 +8,7 @@ target 'TaskList' do
   use_frameworks!
 
   # Pods for TaskList
+  pod repo update
   pod 'RealmSwift'
 
 end

@@ -16,6 +16,11 @@
 		9B5A95BE22999E9E006023C0 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95BD22999E9E006023C0 /* CategoryCell.swift */; };
 		9B5A95C02299A263006023C0 /* AddEditCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95BF2299A263006023C0 /* AddEditCategoryVC.swift */; };
 		9B5A95C22299A74A006023C0 /* ItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95C12299A74A006023C0 /* ItemVC.swift */; };
+		9B5A95C62299B98A006023C0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95C52299B98A006023C0 /* Category.swift */; };
+		9B5A95C82299B99A006023C0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95C72299B99A006023C0 /* Item.swift */; };
+		9B5A95CA2299C258006023C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95C92299C258006023C0 /* Helper.swift */; };
+		9B5A95CC229C4119006023C0 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95CB229C4119006023C0 /* ItemCell.swift */; };
+		9B5A95D0229DC527006023C0 /* AddEditItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5A95CF229DC527006023C0 /* AddEditItemVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		9B5A95BD22999E9E006023C0 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		9B5A95BF2299A263006023C0 /* AddEditCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCategoryVC.swift; sourceTree = "<group>"; };
 		9B5A95C12299A74A006023C0 /* ItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVC.swift; sourceTree = "<group>"; };
+		9B5A95C52299B98A006023C0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9B5A95C72299B99A006023C0 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9B5A95C92299C258006023C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		9B5A95CB229C4119006023C0 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		9B5A95CF229DC527006023C0 /* AddEditItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditItemVC.swift; sourceTree = "<group>"; };
 		ED4558E0CECA53385E3D57BC /* Pods-TaskList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskList.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskList/Pods-TaskList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +113,7 @@
 				9B5A95A822999726006023C0 /* CategoryVC.swift */,
 				9B5A95BF2299A263006023C0 /* AddEditCategoryVC.swift */,
 				9B5A95C12299A74A006023C0 /* ItemVC.swift */,
+				9B5A95CF229DC527006023C0 /* AddEditItemVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -110,6 +121,8 @@
 		9B5A95B9229999A7006023C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B5A95C52299B98A006023C0 /* Category.swift */,
+				9B5A95C72299B99A006023C0 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -119,6 +132,7 @@
 			children = (
 				9B5A95AA22999726006023C0 /* Main.storyboard */,
 				9B5A95BD22999E9E006023C0 /* CategoryCell.swift */,
+				9B5A95CB229C4119006023C0 /* ItemCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +140,7 @@
 		9B5A95BB229999C3006023C0 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				9B5A95C92299C258006023C0 /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -253,9 +268,14 @@
 			files = (
 				9B5A95C02299A263006023C0 /* AddEditCategoryVC.swift in Sources */,
 				9B5A95A922999726006023C0 /* CategoryVC.swift in Sources */,
+				9B5A95CC229C4119006023C0 /* ItemCell.swift in Sources */,
+				9B5A95D0229DC527006023C0 /* AddEditItemVC.swift in Sources */,
 				9B5A95A722999726006023C0 /* AppDelegate.swift in Sources */,
+				9B5A95C82299B99A006023C0 /* Item.swift in Sources */,
 				9B5A95BE22999E9E006023C0 /* CategoryCell.swift in Sources */,
 				9B5A95C22299A74A006023C0 /* ItemVC.swift in Sources */,
+				9B5A95C62299B98A006023C0 /* Category.swift in Sources */,
+				9B5A95CA2299C258006023C0 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

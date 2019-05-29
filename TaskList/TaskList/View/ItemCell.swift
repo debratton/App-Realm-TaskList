@@ -1,57 +1,58 @@
 //
-//  CategoryCell.swift
+//  ItemCell.swift
 //  TaskList
 //
-//  Created by David E Bratton on 5/25/19.
+//  Created by David E Bratton on 5/27/19.
 //  Copyright © 2019 David Bratton. All rights reserved.
 //
 
 import UIKit
 
-protocol SetSwitchState {
-    func changeImportantSwitch(_ sender: CategoryCell, isOn: Bool)
-    func changeDoneSwitch(_ sender: CategoryCell, isOn: Bool)
+protocol SetItemSwitchState {
+    func changeImportantSwitch(_ sender: ItemCell, isOn: Bool)
+    func changeCompletedSwitch(_ sender: ItemCell, isOn: Bool)
 }
 
-class CategoryCell: UITableViewCell {
+class ItemCell: UITableViewCell {
 
-    var delegate: SetSwitchState!
+    var delegate: SetItemSwitchState!
     
     @IBOutlet weak var importantLabel: UILabel!
-    @IBOutlet weak var completedLabel: UILabel!
     @IBOutlet weak var importantSwitch: UISwitch!
+    @IBOutlet weak var completedLabel: UILabel!
     @IBOutlet weak var completedSwitch: UISwitch!
-    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
     
     @IBAction func importantSwitchPressed(_ sender: UISwitch) {
         delegate.changeImportantSwitch(self, isOn: importantSwitch.isOn)
     }
     
     @IBAction func completedSwitchPressed(_ sender: UISwitch) {
-        delegate.changeDoneSwitch(self, isOn: completedSwitch.isOn)
+        delegate.changeCompletedSwitch(self, isOn: completedSwitch.isOn)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
-    func configureCell(category: Category) {
-        if category.important == true {
-            categoryLabel.text = "\(category.name)❗️"
+    
+    func configureCell(item: Item) {
+        if item.important == true {
+            itemNameLabel.text = "\(item.name)❗️"
         } else {
-            categoryLabel.text = "\(category.name)"
+            itemNameLabel.text = "\(item.name)"
         }
         
-        if category.important == true {
+        if item.important == true {
             importantSwitch.isOn = true
         } else {
             importantSwitch.isOn = false
         }
         
-        if category.completed == true {
+        if item.completed == true {
             completedSwitch.isOn = true
         } else {
             completedSwitch.isOn = false
         }
     }
+
 }
